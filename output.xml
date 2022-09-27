@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220926 15:10:22.283" rpa="false" schemaversion="3">
+<suite id="s1" name="1 0 Make Appointment" source="E:\GitHub\RobotFramework-CURA-demo\Test_suite\1_0_make_appointment.robot">
+<test id="s1-t1" name="Make Appoiment" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://katalon-demo-cura.herokuapp.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220926 15:10:22.458" level="INFO">Opening browser 'chrome' to base url 'https://katalon-demo-cura.herokuapp.com/'.</msg>
+<status status="PASS" starttime="20220926 15:10:22.458" endtime="20220926 15:10:27.394"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="btn-make-appointment"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220926 15:10:27.395" level="INFO">Clicking element 'xpath=//*[@id="btn-make-appointment"]'.</msg>
+<status status="PASS" starttime="20220926 15:10:27.394" endtime="20220926 15:10:28.653"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="txt-username"]</arg>
+<arg>John Doe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220926 15:10:28.653" level="INFO">Typing text 'John Doe' into text field 'xpath=//*[@id="txt-username"]'.</msg>
+<status status="PASS" starttime="20220926 15:10:28.653" endtime="20220926 15:10:28.740"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="txt-password"]</arg>
+<arg>ThisIsNotAPassword</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220926 15:10:28.740" level="INFO">Typing text 'ThisIsNotAPassword' into text field 'xpath=//*[@id="txt-password"]'.</msg>
+<status status="PASS" starttime="20220926 15:10:28.740" endtime="20220926 15:10:28.816"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="btn-login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220926 15:10:28.816" level="INFO">Clicking element 'xpath=//*[@id="btn-login"]'.</msg>
+<status status="PASS" starttime="20220926 15:10:28.816" endtime="20220926 15:10:30.384"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>xpath=//*[@id="combo_facility"]</arg>
+<arg>Hongkong CURA Healthcare Center</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220926 15:10:30.384" level="INFO">Selecting options from selection list 'xpath=//*[@id="combo_facility"]' by label Hongkong CURA Healthcare Center.</msg>
+<status status="PASS" starttime="20220926 15:10:30.384" endtime="20220926 15:10:30.461"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="chk_hospotal_readmission"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220926 15:10:30.462" level="INFO">Clicking element 'xpath=//*[@id="chk_hospotal_readmission"]'.</msg>
+<status status="PASS" starttime="20220926 15:10:30.461" endtime="20220926 15:10:30.497"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="radio_program_medicaid"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220926 15:10:30.498" level="INFO">Clicking element 'xpath=//*[@id="radio_program_medicaid"]'.</msg>
+<status status="PASS" starttime="20220926 15:10:30.498" endtime="20220926 15:10:30.527"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//section[@id="appointment"]/div/div/form/div[4]/div/div/div/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220926 15:10:30.528" level="INFO">Clicking element 'xpath=//section[@id="appointment"]/div/div/form/div[4]/div/div/div/span'.</msg>
+<status status="PASS" starttime="20220926 15:10:30.527" endtime="20220926 15:10:30.572"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=(.//*[normalize-space(text()) and normalize-space(.)="Sa"])[1]/following::td[25]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220926 15:10:30.572" level="INFO">Clicking element 'xpath=(.//*[normalize-space(text()) and normalize-space(.)="Sa"])[1]/following::td[25]'.</msg>
+<status status="PASS" starttime="20220926 15:10:30.572" endtime="20220926 15:10:30.611"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//section[@id="appointment"]/div/div/form/div[4]/div/div/div/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220926 15:10:30.612" level="INFO">Clicking element 'xpath=//section[@id="appointment"]/div/div/form/div[4]/div/div/div/span'.</msg>
+<status status="PASS" starttime="20220926 15:10:30.611" endtime="20220926 15:10:30.637"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="txt_comment"]</arg>
+<arg>testing2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220926 15:10:30.637" level="INFO">Typing text 'testing2' into text field 'xpath=//*[@id="txt_comment"]'.</msg>
+<status status="PASS" starttime="20220926 15:10:30.637" endtime="20220926 15:10:30.699"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="btn-book-appointment"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220926 15:10:30.699" level="INFO">Clicking element 'xpath=//*[@id="btn-book-appointment"]'.</msg>
+<status status="PASS" starttime="20220926 15:10:30.699" endtime="20220926 15:10:31.045"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220926 15:10:36.049" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220926 15:10:31.045" endtime="20220926 15:10:36.049"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath=//*[@id="summary"]/div/div/div[1]/h2</arg>
+<arg>Appointment Confirmation</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220926 15:10:36.049" level="INFO">Verifying element 'xpath=//*[@id="summary"]/div/div/div[1]/h2' contains exact text 'Appointment Confirmation'.</msg>
+<status status="PASS" starttime="20220926 15:10:36.049" endtime="20220926 15:10:36.073"/>
+</kw>
+<status status="PASS" starttime="20220926 15:10:22.457" endtime="20220926 15:10:36.073"/>
+</test>
+<status status="PASS" starttime="20220926 15:10:22.284" endtime="20220926 15:10:36.074"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="1 0 Make Appointment">1 0 Make Appointment</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
